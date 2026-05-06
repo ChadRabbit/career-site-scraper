@@ -145,9 +145,8 @@ async def main(companies: Optional[list[str]] = None):
     jobs = await run_ai_on_excel(
         final_path,
         models=[
-            {"name": "qwen2.5:3b", "url": "http://localhost:11434"},
-            # {"name": "qwen2.5:7b", "url": "http://localhost:11434"},
-            # {"name": "gemma4:e2b", "url": "http://localhost:11434"},
+            {"name": "qwen2.5:7b", "url": "http://localhost:11434"},
+            {"name": "gemma4:e2b", "url": "http://localhost:11434"},
         ],
     )
 
@@ -159,7 +158,7 @@ async def main(companies: Optional[list[str]] = None):
 
 if __name__ == "__main__":
     # ── Edit this list to run only specific companies, or pass [] for all ──
-    TARGET_COMPANIES = ["Google"]
+    TARGET_COMPANIES = []
 
     results = asyncio.run(main(TARGET_COMPANIES if TARGET_COMPANIES else None))
 

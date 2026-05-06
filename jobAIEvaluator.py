@@ -19,7 +19,7 @@ class JobAIEvaluator:
     Candidate:
     - Final year CS student
     - Interested in Software Engineering roles (Backend / Fullstack / AI)
-    - Prefers location in India or Remote
+    - Prefers location in India only
     
     GOOD roles:
     - Software Engineer, SDE, Backend, Fullstack, AI Engineer, Intern

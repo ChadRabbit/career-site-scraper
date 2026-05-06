@@ -172,7 +172,7 @@ COMPANY_CONFIGS: list[CompanyConfig] = [
         pagination=PaginationConfig(
             type="page_number",
             page_number_selector_template="[data-ph-at-id='pagination-page-number-link'][data-ph-at-text='{page}']",
-            max_pages=5,
+            max_pages=2,
             page_load_wait_ms=2000,
             scroll_step_px=4000,
             scroll_rounds=2,

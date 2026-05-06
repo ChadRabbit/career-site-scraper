@@ -3,8 +3,7 @@ Save Session Script for LinkedIn Job Scraping
 
 This script:
 1. Launches a Chromium browser with a persistent context, allowing you to save your login session.
-2. Navigates to the LinkedIn login page.
-3. Prompts you to log in manually and then press Enter to continue.
+2. Prompts you to broswse manually and then press Enter to continue.
 
 Author: Saransh Mehra
 """
@@ -17,6 +16,6 @@ with sync_playwright() as p:
         headless=False
     )
     page = context.new_page()
-    page.goto("https://www.linkedin.com/login")
+    page.goto("https://www.google.com")
 
-    input("Login manually, then press Enter...")
+    input("Browse manually, then press Enter...")

@@ -26,6 +26,11 @@ async def _scrape_dom_page(page: Page, cfg: CompanyConfig) -> list[dict]:
             card_count = await cards.count()
             for j in range(card_count):
                 job = await _extract_card(cards.nth(j), dom, cfg.name)
+                if dom.base_url:
+                    if job['apply_url'].startswith("/"):
+                        job["apply_url"] = f"{dom.base_url}{job['apply_url']}"
+                    else:
+                        job["apply_url"] = f"{dom.base_url}/{job['{{{apply_url']}"
                 job["location"] = location
                 results.append(job)
                 log.info(job)
