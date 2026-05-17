@@ -129,7 +129,6 @@ Scrape → Normalize → Filter → Store → AI Score → Final Excel
 ## ⚡ Supported Patterns
 
 * API interception (Uber, Databricks)
-* JSON endpoints (Rippling, Cohesity)
 * DOM scraping (Google, Stripe)
 * Lazy loading / infinite scroll
 * Pagination (click, numbered, incremental)
