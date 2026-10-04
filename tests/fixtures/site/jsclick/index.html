@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Initech Careers</title>
+  <style>
+    .posting { border: 1px solid #ccc; padding: 16px; margin: 8px; cursor: pointer; }
+    .posting-title { margin: 0 0 4px; font-size: 18px; }
+    .posting-loc { margin: 0; color: #555; }
+  </style>
+</head>
+<body>
+<h1>Jobs at Initech</h1>
+<section id="postings"></section>
+<script>
+  const JOBS = [
+    [70001, "Backend Engineer", "Remote"],
+    [70002, "Software Engineer II", "Bengaluru, India"],
+    [70003, "Frontend Developer", "Pune, India"],
+    [70004, "DevOps Engineer", "Remote"],
+    [70005, "Data Analyst", "Hyderabad, India"],
+  ];
+  const root = document.getElementById("postings");
+  for (const [id, title, loc] of JOBS) {
+    const div = document.createElement("div");
+    div.className = "posting";
+    div.dataset.jobId = String(id);
+    div.innerHTML = `<h3 class="posting-title">${title}</h3><p class="posting-loc">${loc}</p>`;
+    div.addEventListener("click", () => { location.href = "/jsclick/job.html?jobId=" + id; });
+    root.appendChild(div);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "name": "Google",
+  "slug": "google",
+  "start_url": "https://www.google.com/about/careers/applications/jobs/results",
+  "dom": {
+    "card": {
+      "candidates": [
+        "ul.spHGqe > li",
+        "div ul.spHGqe > li"
+      ],
+      "fingerprint": {
+        "tag": "h3",
+        "text": "Senior Staff Software Engineer, Search Platforms, GenAI Content",
+        "attrs": {
+          "class": "QJPWVe"
+        },
+        "rect": {
+          "x": 532,
+          "y": 160,
+          "width": 564.75,
+          "height": 64
+        }
+      }
+    },
+    "fields": {
+      "title": {
+        "selectors": [
+          "h3",
+          "div.ObfsIf-eEDwDf.ObfsIf-eEDwDf-PvhD9-purZT-OiUrBf.ObfsIf-eEDwDf-hJDwNd-Clt0zb > h3",
+          ":scope > div > div > div.VfPpkd-WsjYwc.VfPpkd-WsjYwc-OWXEXe-INsAgc.kFpsj > div > div.ObfsIf-oKdM2c > div.ObfsIf-eEDwDf.ObfsIf-eEDwDf-PvhD9-purZT-OiUrBf.ObfsIf-eEDwDf-hJDwNd-Clt0zb > h3"
+        ],
+        "closest": false
+      },
+      "apply_url": {
+        "selectors": [
+          "a.VfPpkd-mRLv6.VfPpkd-RLmnJb",
+          "div.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-INsAgc.VfPpkd-LgbsSe-OWXEXe-dgl2Hf > a.VfPpkd-mRLv6.VfPpkd-RLmnJb",
+          ":scope > div > div > div.VfPpkd-WsjYwc.VfPpkd-WsjYwc-OWXEXe-INsAgc.kFpsj > div > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb[data-is-touch-wrapper=\"true\"] > div.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-INsAgc.VfPpkd-LgbsSe-OWXEXe-dgl2Hf > a.VfPpkd-mRLv6.VfPpkd-RLmnJb"
+        ],
+        "attr": "href",
+        "closest": false
+      },
+      "location": {
+        "selectors": [
+          ":scope > div > div > div.VfPpkd-WsjYwc.VfPpkd-WsjYwc-OWXEXe-INsAgc.kFpsj > div > div:nth-of-type(2) > div > span:nth-of-type(2)"
+        ],
+        "closest": false
+      },
+      "department": {
+        "selectors": [
+          "span.VfPpkd-vQzf8d",
+          "button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-INsAgc.VfPpkd-LgbsSe-OWXEXe-Bz112c-M1Soyc[data-disable-idom=\"true\"][data-tooltip-enabled=\"true\"][data-tooltip-is-rich=\"true\"] > span.VfPpkd-vQzf8d",
+          ":scope > div > div > div.VfPpkd-WsjYwc.VfPpkd-WsjYwc-OWXEXe-INsAgc.kFpsj > div > div:nth-of-type(2) > div > div > span.VfPpkd-suEOdc-sM5MNb-OWXEXe-nzrxxc[data-is-tooltip-wrapper=\"true\"] > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb[data-is-touch-wrapper=\"true\"] > button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-INsAgc.VfPpkd-LgbsSe-OWXEXe-Bz112c-M1Soyc[data-disable-idom=\"true\"][data-tooltip-enabled=\"true\"][data-tooltip-is-rich=\"true\"] > span.VfPpkd-vQzf8d"
+        ],
+        "closest": false
+      },
+      "job_id": {
+        "selectors": [
+          "span.VfPpkd-suEOdc-sM5MNb-OWXEXe-nzrxxc[data-is-tooltip-wrapper=\"true\"] > div.VfPpkd-suEOdc.VfPpkd-suEOdc-OWXEXe-nzrxxc.ziykHb[role=\"tooltip\"]"
+        ],
+        "attr": "data-title-id-disregard",
+        "closest": false
+      }
+    }
+  },
+  "popups": [],
+  "search": {
+    "query": "Software",
+    "input": {
+      "candidates": [
+        "input.VfPpkd-fmcmS-wGMbrd[type=\"text\"][role=\"combobox\"][data-axe=\"mdc-autocomplete\"]",
+        "label.VfPpkd-fmcmS-yrriRe.VfPpkd-fmcmS-yrriRe-OWXEXe-mWPk3d.VfPpkd-ksKsZd-mWPk3d input.VfPpkd-fmcmS-wGMbrd[type=\"text\"][role=\"combobox\"][data-axe=\"mdc-autocomplete\"]",
+        "xpath=/html[1]/body[1]/c-wiz[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/div[1]/label[1]/input[1]"
+      ],
+      "fingerprint": {
+        "tag": "input",
+        "text": "",
+        "attrs": {
+          "type": "text",
+          "value": "",
+          "id": "c12",
+          "jsname": "YPqjbf",
+          "class": "VfPpkd-fmcmS-wGMbrd ",
+          "jsaction": "focus:AHmuwe;input:YPqjbf; mousedown:UX7yZ; mouseup:lbsD7e; pointerdown:QJflP; pointerup:HxTfMe; touchstart:p6p2H; touchend:yfqBxc;",
+          "aria-labelledby": "c11",
+          "placeholder": "Software engineering, Design, Sales, etc.",
+          "role": "combobox",
+          "aria-controls": "ucj-3",
+          "aria-autocomplete": "list",
+          "aria-expanded": "false",
+          "data-axe": "mdc-autocomplete",
+          "autocomplete": "off",
+          "style": ""
+        },
+        "rect": {
+          "x": 112,
+          "y": 128,
+          "width": 307,
+          "height": 56
+        }
+      }
+    },
+    "submit": "enter",
+    "results_url": "https://www.google.com/about/careers/applications/jobs/results?q={query}"
+  },
+  "pagination": {
+    "type": "next",
+    "control": {
+      "candidates": [
+        "a.VfPpkd-mRLv6[aria-label=\"Go to next page\"][data-tooltip-enabled=\"true\"][rel=\"no-follow\"]",
+        "div.VfPpkd-Bz112c-LgbsSe[data-idom-class=\"yHy1rc eT1oJ mN1ivc\"][data-tooltip-enabled=\"true\"] a.VfPpkd-mRLv6[aria-label=\"Go to next page\"][data-tooltip-enabled=\"true\"][rel=\"no-follow\"]",
+        "a[aria-label=\"Go to next page\"]",
+        "xpath=/html[1]/body[1]/c-wiz[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/main[1]/div[1]/c-wiz[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/a[1]"
+      ],
+      "fingerprint": {
+        "tag": "a",
+        "text": "",
+        "attrs": {
+          "class": "WpHeLc VfPpkd-mRLv6",
+          "href": "https://www.google.com/about/careers/applications/jobs/results?q=Software&page=2",
+          "aria-label": "Go to next page",
+          "data-tooltip-enabled": "true",
+          "data-tooltip-id": "tt-c147",
+          "rel": "no-follow",
+          "jsname": "hSRGPd",
+          "jsaction": "JZCswc:.CLIENT"
+        },
+        "rect": {
+          "x": 1277,
+          "y": 350,
+          "width": 48,
+          "height": 48
+        }
+      }
+    },
+    "url_template": "https://www.google.com/about/careers/applications/jobs/results?q=Software&page={page}",
+    "max_pages": 5
+  },
+  "onboarded_at": "2026-10-04T04:48:23",
+  "onboarded_job_count": 40,
+  "notes": [
+    "search: 'Software' via URL template",
+    "clicking a job did not open a page (modal/side panel?)",
+    "pagination 'next' verified: 20 new jobs on page 2"
+  ]
+}

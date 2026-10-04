@@ -1,0 +1,135 @@
+{
+  "schema_version": 2,
+  "name": "Airbnb",
+  "slug": "airbnb",
+  "start_url": "https://careers.airbnb.com/positions/",
+  "dom": {
+    "card": {
+      "candidates": [
+        "ul.job-list.w-full.facetwp-template[role=\"list\"] > li.inner-grid.border-b.border-gray-Foggy[role=\"listitem\"]",
+        "li.inner-grid.border-b.border-gray-Foggy[role=\"listitem\"]",
+        "div.inner-flex.mb-12 ul.job-list.w-full.facetwp-template[role=\"list\"] > li.inner-grid.border-b.border-gray-Foggy[role=\"listitem\"]"
+      ],
+      "fingerprint": {
+        "tag": "a",
+        "text": "Staff Software Engineer, Unified Data Store",
+        "attrs": {
+          "href": "https://careers.airbnb.com/positions/7867435/",
+          "tabindex": "0"
+        },
+        "rect": {
+          "x": 40,
+          "y": 633.296875,
+          "width": 322.7265625,
+          "height": 20.5
+        }
+      }
+    },
+    "fields": {
+      "title": {
+        "selectors": [
+          "a",
+          "span.text-size-4 > a",
+          ":scope > div.col-span-4.lg\\:col-span-9 > span.text-size-4 > a"
+        ],
+        "closest": false
+      },
+      "apply_url": {
+        "selectors": [
+          "a",
+          "span.text-size-4 > a",
+          ":scope > div.col-span-4.lg\\:col-span-9 > span.text-size-4 > a"
+        ],
+        "attr": "href",
+        "closest": false
+      },
+      "location": {
+        "selectors": [
+          "span.text-size-4.font-normal.text-gray-48",
+          "div.col-span-4.lg\\:col-span-3.flex > span.text-size-4.font-normal.text-gray-48",
+          ":scope > div.col-span-4.lg\\:col-span-3.flex > span.text-size-4.font-normal.text-gray-48"
+        ],
+        "closest": false
+      },
+      "department": {
+        "selectors": [
+          "span",
+          "div.flex.text-size-3.font-medium > span",
+          ":scope > div.col-span-4.lg\\:col-span-9 > div.flex.text-size-3.font-medium > span:nth-of-type(1)"
+        ],
+        "closest": false
+      }
+    }
+  },
+  "popups": [],
+  "search": {
+    "query": "Software",
+    "input": {
+      "candidates": [
+        "input.facetwp-search[type=\"text\"][placeholder=\"Start your search\"][aria-label=\"Start your search\"]",
+        "span.facetwp-input-wrap input.facetwp-search[type=\"text\"][placeholder=\"Start your search\"][aria-label=\"Start your search\"]",
+        "input[aria-label=\"Start your search\"]",
+        "xpath=/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/span[1]/input[1]"
+      ],
+      "fingerprint": {
+        "tag": "input",
+        "text": "",
+        "attrs": {
+          "type": "text",
+          "class": "facetwp-search",
+          "value": "",
+          "placeholder": "Start your search",
+          "autocomplete": "off",
+          "aria-label": "Start your search",
+          "style": ""
+        },
+        "rect": {
+          "x": 523,
+          "y": 155,
+          "width": 327,
+          "height": 60
+        }
+      }
+    },
+    "submit": "enter",
+    "results_url": "https://careers.airbnb.com/positions/?_search_input={query}"
+  },
+  "pagination": {
+    "type": "page_number",
+    "control": {
+      "candidates": [
+        "a:text-is(\"2\")",
+        "a[aria-label=\"Go to page 2\"]",
+        "xpath=/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/div[1]/a[2]"
+      ],
+      "fingerprint": {
+        "tag": "a",
+        "text": "2",
+        "attrs": {
+          "class": "facetwp-page",
+          "tabindex": "0",
+          "data-page": "2",
+          "data-listeners-added": "true",
+          "role": "link",
+          "aria-label": "Go to page 2"
+        },
+        "rect": {
+          "x": 639.6875,
+          "y": 347.8984375,
+          "width": 17.015625,
+          "height": 24
+        }
+      }
+    },
+    "page_number_template": "a.facetwp-page[data-listeners-added=\"true\"][role=\"link\"]:text-is(\"{page}\")",
+    "url_template": "https://careers.airbnb.com/positions/?_search_input=Software&_paged={page}",
+    "max_pages": 5
+  },
+  "onboarded_at": "2026-10-04T04:46:55",
+  "onboarded_job_count": 19,
+  "notes": [
+    "search: 'Software' via URL template",
+    "clicking a job did not open a page (modal/side panel?)",
+    "pagination 'page_number' verified: 10 new jobs on page 2"
+  ]
+}

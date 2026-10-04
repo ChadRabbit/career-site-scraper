@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "name": "Atlassian",
+  "slug": "atlassian",
+  "start_url": "https://www.atlassian.com/company/careers/all-jobs",
+  "dom": {
+    "card": {
+      "candidates": [
+        "tbody > tr",
+        "tr",
+        "table tbody > tr"
+      ],
+      "fingerprint": {
+        "tag": "a",
+        "text": "Senior Application Engineering Manager, Core Financial Apps",
+        "attrs": {
+          "href": "/company/careers/details/27069"
+        },
+        "rect": {
+          "x": 130.4140625,
+          "y": 440.6953125,
+          "width": 556.078125,
+          "height": 56
+        }
+      }
+    },
+    "fields": {
+      "title": {
+        "selectors": [
+          "a",
+          "td > a",
+          ":scope > td:nth-of-type(1) > a"
+        ],
+        "closest": false
+      },
+      "apply_url": {
+        "selectors": [
+          "a",
+          "td > a",
+          ":scope > td:nth-of-type(1) > a"
+        ],
+        "attr": "href",
+        "closest": false
+      },
+      "location": {
+        "selectors": [
+          ":scope > td:nth-of-type(2)"
+        ],
+        "closest": false
+      }
+    }
+  },
+  "popups": [],
+  "search": {
+    "query": "Software",
+    "input": {
+      "candidates": [
+        "input[type=\"text\"][placeholder=\"Search the results\"]",
+        "div.search input[type=\"text\"][placeholder=\"Search the results\"]",
+        "xpath=/html[1]/body[1]/main[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[3]/input[1]"
+      ],
+      "fingerprint": {
+        "tag": "input",
+        "text": "",
+        "attrs": {
+          "type": "text",
+          "placeholder": "Search the results",
+          "value": "",
+          "style": ""
+        },
+        "rect": {
+          "x": 130.4140625,
+          "y": 280.1953125,
+          "width": 556.078125,
+          "height": 25.5
+        }
+      }
+    },
+    "submit": "enter",
+    "results_url": "https://www.atlassian.com/company/careers/all-jobs?team=&location=&search={query}"
+  },
+  "pagination": {
+    "type": "none",
+    "max_pages": 5
+  },
+  "onboarded_at": "2026-10-04T03:46:58",
+  "onboarded_job_count": 326,
+  "notes": [
+    "search: 'Software' via URL template",
+    "sample job page: https://www.atlassian.com/company/careers/details/27069"
+  ]
+}

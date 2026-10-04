@@ -1,10 +1,14 @@
 /.idea/
+career-site.iml
 __pycache__/
 *.pyc
-.env
-logs/
-career-site.iml
-uber_jobs.py
+.pytest_cache/
 .venv
-runs
-user_data
+.env
+
+# runtime data (configs/ IS committed: it's the onboarded companies)
+logs/
+runs/
+captures/
+state/
+user_data/

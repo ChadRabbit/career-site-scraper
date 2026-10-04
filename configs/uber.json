@@ -1,0 +1,136 @@
+{
+  "schema_version": 2,
+  "name": "Uber",
+  "slug": "uber",
+  "start_url": "https://www.uber.com/careers/list/",
+  "dom": {
+    "card": {
+      "candidates": [
+        "div.flex.flex-col.gap-\\[10px\\] > div.bg-card.text-card-foreground.group[data-slot=\"card\"]",
+        "div.bg-card.text-card-foreground.group[data-slot=\"card\"]",
+        "div.flex.flex-col.gap-4 div.flex.flex-col.gap-\\[10px\\] > div.bg-card.text-card-foreground.group[data-slot=\"card\"]"
+      ],
+      "fingerprint": {
+        "tag": "a",
+        "text": "Software Engineer II - Risk & Compliance",
+        "attrs": {
+          "class": "js-view-job focus-visible:outline-none before:content-[''] before:absolute before:inset-0",
+          "href": "/en/jobs/302349/"
+        },
+        "rect": {
+          "x": 523.328125,
+          "y": 403.09375,
+          "width": 475.828125,
+          "height": 31.5
+        }
+      }
+    },
+    "fields": {
+      "title": {
+        "selectors": [
+          "a.focus-visible\\:outline-none.before\\:content-\\[\\'\\'\\].before\\:absolute",
+          "h2.text-base.lg\\:text-\\[26px\\].font-bold > a.focus-visible\\:outline-none.before\\:content-\\[\\'\\'\\].before\\:absolute",
+          ":scope > div.\\@container\\/card-header.grid.auto-rows-min[data-slot=\"card-header\"] > div.flex.justify-between.gap-5 > div.font-medium.leading-\\[115\\%\\].lg\\:text-\\[20px\\][data-slot=\"card-title\"] > h2.text-base.lg\\:text-\\[26px\\].font-bold > a.focus-visible\\:outline-none.before\\:content-\\[\\'\\'\\].before\\:absolute"
+        ],
+        "closest": false
+      },
+      "apply_url": {
+        "selectors": [
+          "a.focus-visible\\:outline-none.before\\:content-\\[\\'\\'\\].before\\:absolute",
+          "h2.text-base.lg\\:text-\\[26px\\].font-bold > a.focus-visible\\:outline-none.before\\:content-\\[\\'\\'\\].before\\:absolute",
+          ":scope > div.\\@container\\/card-header.grid.auto-rows-min[data-slot=\"card-header\"] > div.flex.justify-between.gap-5 > div.font-medium.leading-\\[115\\%\\].lg\\:text-\\[20px\\][data-slot=\"card-title\"] > h2.text-base.lg\\:text-\\[26px\\].font-bold > a.focus-visible\\:outline-none.before\\:content-\\[\\'\\'\\].before\\:absolute"
+        ],
+        "attr": "href",
+        "closest": false
+      },
+      "location": {
+        "selectors": [
+          "div.flex.items-center.justify-center > div",
+          ":scope > div.text-black.font-medium.text-\\[10px\\][data-slot=\"card-description\"] > div.flex.flex-wrap.gap-2 > div.flex.items-center.justify-center:nth-of-type(1) > div"
+        ],
+        "closest": false
+      },
+      "department": {
+        "selectors": [
+          ":scope > div.text-black.font-medium.text-\\[10px\\][data-slot=\"card-description\"] > div.flex.flex-wrap.gap-2 > div.flex.items-center.justify-center:nth-of-type(2)"
+        ],
+        "closest": false
+      },
+      "job_id": {
+        "selectors": [],
+        "attr": "data-id",
+        "closest": false
+      }
+    }
+  },
+  "popups": [],
+  "search": {
+    "query": "Software",
+    "input": {
+      "candidates": [
+        "#job-search-skill",
+        "input.file\\:text-foreground.selection\\:bg-primary.selection\\:text-primary-foreground[data-slot=\"input\"][aria-label=\"Search by skill\"][placeholder=\"Search roles by title, skill, or keyword\"]",
+        "div.relative input.file\\:text-foreground.selection\\:bg-primary.selection\\:text-primary-foreground[data-slot=\"input\"][aria-label=\"Search by skill\"][placeholder=\"Search roles by title, skill, or keyword\"]",
+        "input[aria-label=\"Search by skill\"]",
+        "xpath=/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]"
+      ],
+      "fingerprint": {
+        "tag": "input",
+        "text": "",
+        "attrs": {
+          "data-slot": "input",
+          "class": "file:text-foreground selection:bg-primary selection:text-primary-foreground border-input flex min-w-0 rounded-md border py-1 text-base shadow-xs transition-[color,box-shadow] file:inline-flex file:h-7",
+          "id": "job-search-skill",
+          "aria-label": "Search by skill",
+          "placeholder": "Search roles by title, skill, or keyword",
+          "aria-describedby": "search-feedback",
+          "value": "",
+          "style": ""
+        },
+        "rect": {
+          "x": 32,
+          "y": 44,
+          "width": 386.328125,
+          "height": 56
+        }
+      }
+    },
+    "submit": "enter",
+    "results_url": "https://jobs.uber.com/en/jobs/?search={query}&radius=100"
+  },
+  "pagination": {
+    "type": "page_number",
+    "control": {
+      "candidates": [
+        "a:text-is(\"2\")",
+        "xpath=/html[1]/body[1]/main[1]/div[2]/div[1]/div[2]/div[3]/nav[1]/ul[1]/li[3]/a[1]"
+      ],
+      "fingerprint": {
+        "tag": "a",
+        "text": "2",
+        "attrs": {
+          "data-slot": "pagination-link",
+          "data-active": "false",
+          "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*=\"size-\"])]:si",
+          "href": "/en/jobs?search=Software&radius=100&page=2&pagesize=10"
+        },
+        "rect": {
+          "x": 831.8203125,
+          "y": 202.59375,
+          "width": 36,
+          "height": 36
+        }
+      }
+    },
+    "page_number_template": "a.inline-flex.items-center.justify-center[data-slot=\"pagination-link\"][data-active=\"false\"]:text-is(\"{page}\")",
+    "url_template": "https://jobs.uber.com/en/jobs/?search=Software&radius=100&page={page}&pagesize=10",
+    "max_pages": 5
+  },
+  "onboarded_at": "2026-10-04T03:43:27",
+  "onboarded_job_count": 20,
+  "notes": [
+    "search: 'Software' via URL template",
+    "sample job page: https://jobs.uber.com/en/jobs/302349/",
+    "pagination 'page_number' verified: 10 new jobs on page 2"
+  ]
+}

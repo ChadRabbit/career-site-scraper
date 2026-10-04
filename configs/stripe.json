@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "name": "Stripe",
+  "slug": "stripe",
+  "start_url": "https://stripe.com/jobs/search",
+  "dom": {
+    "card": {
+      "candidates": [
+        "ul.open-roles-section__list > li.careers-role-result",
+        "li.careers-role-result",
+        "div.open-roles-section__results ul.open-roles-section__list > li.careers-role-result"
+      ],
+      "fingerprint": {
+        "tag": "a",
+        "text": "Full Stack Software Engineer, Brazil",
+        "attrs": {
+          "class": "hds-link careers-role-result__title",
+          "href": "/careers/listing/full-stack-software-engineer-brazil/7895284",
+          "data-analytics-label": "careers_search_roles__result"
+        },
+        "rect": {
+          "x": 383.5,
+          "y": 238.796875,
+          "width": 265.21875,
+          "height": 20
+        }
+      }
+    },
+    "fields": {
+      "title": {
+        "selectors": [
+          "a.hds-link.careers-role-result__title",
+          "div.careers-role-result__container > a.hds-link.careers-role-result__title",
+          ":scope > div.careers-role-result__container > a.hds-link.careers-role-result__title"
+        ],
+        "closest": false
+      },
+      "apply_url": {
+        "selectors": [
+          "a.hds-link.careers-role-result__title",
+          "div.careers-role-result__container > a.hds-link.careers-role-result__title",
+          ":scope > div.careers-role-result__container > a.hds-link.careers-role-result__title"
+        ],
+        "attr": "href",
+        "closest": false
+      },
+      "location": {
+        "selectors": [
+          "span.careers-role-location-tag.careers-role-result__metadata-location",
+          "div.careers-role-result__metadata > span.careers-role-location-tag.careers-role-result__metadata-location",
+          ":scope > div.careers-role-result__container > div.careers-role-result__metadata > span.careers-role-location-tag.careers-role-result__metadata-location"
+        ],
+        "closest": false
+      },
+      "department": {
+        "selectors": [
+          "p.hds-text.careers-role-result__metadata-team.hds-text--md",
+          "div.careers-role-result__metadata > p.hds-text.careers-role-result__metadata-team.hds-text--md",
+          ":scope > div.careers-role-result__container > div.careers-role-result__metadata > p.hds-text.careers-role-result__metadata-team.hds-text--md"
+        ],
+        "closest": false
+      }
+    }
+  },
+  "popups": [],
+  "search": {
+    "query": "Software",
+    "input": {
+      "candidates": [
+        "input.hds-input.hds-textinput[name=\"careers-role-search\"][type=\"search\"][aria-label=\"Search for a role\"]",
+        "div.hds-input-group.careers-role-search-input[role=\"group\"] input.hds-input.hds-textinput[name=\"careers-role-search\"][type=\"search\"][aria-label=\"Search for a role\"]",
+        "input[aria-label=\"Search for a role\"]",
+        "xpath=/html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/section[1]/div[1]/div[1]/div[1]/input[1]"
+      ],
+      "fingerprint": {
+        "tag": "input",
+        "text": "",
+        "attrs": {
+          "class": "hds-input hds-textinput",
+          "id": ":R2bar6l6:",
+          "name": "careers-role-search",
+          "type": "search",
+          "enterkeyhint": "search",
+          "aria-label": "Search for a role",
+          "placeholder": "Search for a role",
+          "value": "",
+          "style": ""
+        },
+        "rect": {
+          "x": 87.5,
+          "y": 56.59375,
+          "width": 278,
+          "height": 46
+        }
+      }
+    },
+    "submit": "enter",
+    "results_url": "https://stripe.com/careers/search?query={query}"
+  },
+  "pagination": {
+    "type": "page_number",
+    "control": {
+      "candidates": [
+        "button:text-is(\"2\")",
+        "xpath=/html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/section[1]/div[2]/nav[1]/div[1]/button[2]"
+      ],
+      "fingerprint": {
+        "tag": "button",
+        "text": "2",
+        "attrs": {
+          "type": "button",
+          "class": "hds-button careers-pagination__page-count hds-button--secondary hds-button--compact",
+          "data-analytics-label": "careers_search__pagination"
+        },
+        "rect": {
+          "x": 443.5,
+          "y": 411.6875,
+          "width": 40,
+          "height": 40
+        }
+      }
+    },
+    "page_number_template": "button.hds-button.careers-pagination__page-count.hds-button--secondary[type=\"button\"]:text-is(\"{page}\")",
+    "url_template": "https://stripe.com/careers/search?query=Software&page={page}",
+    "max_pages": 5
+  },
+  "onboarded_at": "2026-10-04T03:45:23",
+  "onboarded_job_count": 26,
+  "notes": [
+    "search: 'Software' via URL template",
+    "sample job page: https://stripe.com/careers/listing/full-stack-software-engineer-brazil/7895284",
+    "pagination 'page_number' verified: 16 new jobs on page 2"
+  ]
+}

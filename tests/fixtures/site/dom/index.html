@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Acme Careers</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; }
+    header nav a { margin-right: 12px; }
+    .layout { display: flex; gap: 24px; padding: 16px; }
+    aside { width: 220px; }
+    .job-list { list-style: none; padding: 0; flex: 1; }
+    .job-card { border: 1px solid #ddd; margin: 8px 0; padding: 18px; height: 60px; }
+    .job-title { font-size: 20px; font-weight: 700; }
+    .meta span { margin-right: 12px; color: #555; }
+    .pager a { margin: 0 6px; }
+  </style>
+</head>
+<body>
+<header>
+  <nav><a href="/dom/index.html">Careers</a><a href="/dom/index.html?team=eng">Engineering</a><a href="#">Life at Acme</a></nav>
+  <form method="get" action="/dom/index.html">
+    <input type="search" name="q" placeholder="Search jobs" autocomplete="off">
+  </form>
+</header>
+<div class="layout">
+  <aside>
+    <h4>Teams</h4>
+    <label><input type="checkbox"> Software Engineering (12)</label><br>
+    <label><input type="checkbox"> Data Engineering (3)</label><br>
+    <label><input type="checkbox"> Design (2)</label>
+  </aside>
+  <main style="flex:1">
+    <ul class="job-list" id="jobs"></ul>
+    <nav class="pager" id="pager"></nav>
+  </main>
+</div>
+<script>
+  const JOBS = [
+    ["Software Engineer, Backend", "Bengaluru, India", "Engineering"],
+    ["Senior Software Engineer", "Remote", "Engineering"],
+    ["Product Designer", "London, UK", "Design"],
+    ["Frontend Engineer", "Hyderabad, India", "Engineering"],
+    ["Data Scientist", "New York, NY", "Data"],
+    ["Site Reliability Engineer", "Bengaluru, India", "Engineering"],
+    ["Engineering Manager", "Remote", "Engineering"],
+    ["Machine Learning Engineer", "Pune, India", "Data"],
+    ["Recruiter", "London, UK", "People"],
+    ["Full Stack Engineer", "Remote", "Engineering"],
+    ["Account Executive", "New York, NY", "Sales"],
+    ["Software Engineer, Payments", "Bengaluru, India", "Engineering"],
+    ["Security Engineer", "Remote", "Engineering"],
+    ["Mobile Engineer, iOS", "Hyderabad, India", "Engineering"],
+    ["Platform Engineer", "Pune, India", "Engineering"],
+    ["Data Engineer", "Bengaluru, India", "Data"],
+    ["QA Engineer", "Remote", "Engineering"],
+    ["Staff Software Engineer", "London, UK", "Engineering"],
+    ["Software Engineer, Infrastructure", "Remote", "Engineering"],
+    ["Support Engineer", "Hyderabad, India", "Engineering"],
+    ["Marketing Manager", "New York, NY", "Marketing"],
+    ["Software Engineer, Growth", "Bengaluru, India", "Engineering"],
+    ["Design Engineer", "Remote", "Design"],
+    ["Analytics Engineer", "Pune, India", "Data"],
+    ["HR Business Partner", "London, UK", "People"],
+  ].map((j, i) => ({ id: 101 + i, title: j[0], location: j[1], dept: j[2] }));
+
+  const params = new URLSearchParams(location.search);
+  const q = (params.get("q") || "").toLowerCase();
+  const page = parseInt(params.get("page") || "1", 10);
+  const PER = 10;
+  const matches = JOBS.filter((j) => !q || j.title.toLowerCase().includes(q));
+  const pages = Math.max(1, Math.ceil(matches.length / PER));
+  document.querySelector('input[name=q]').value = params.get("q") || "";
+
+  const list = document.getElementById("jobs");
+  for (const j of matches.slice((page - 1) * PER, page * PER)) {
+    const li = document.createElement("li");
+    li.className = "job-card";
+    li.innerHTML = `<a class="job-title" href="/dom/job.html?id=${j.id}">${j.title}</a>
+      <div class="meta"><span class="job-location">${j.location}</span><span class="job-dept">${j.dept}</span></div>`;
+    list.appendChild(li);
+  }
+
+  const link = (p) => { const u = new URLSearchParams(params); u.set("page", p); return "?" + u.toString(); };
+  const pager = document.getElementById("pager");
+  for (let p = 1; p <= pages; p++) pager.insertAdjacentHTML("beforeend", `<a class="pager-link${p === page ? " active" : ""}" href="${link(p)}">${p}</a>`);
+  pager.insertAdjacentHTML("beforeend", page < pages
+    ? `<a class="pager-next" href="${link(page + 1)}">Next</a>`
+    : `<a class="pager-next disabled" aria-disabled="true">Next</a>`);
+
+  // ?cookies=1 → a page-blocking consent dialog that comes back on every load
+  if (params.get("cookies") === "1") {
+    document.body.insertAdjacentHTML("beforeend", `
+      <div id="backdrop" style="position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1000">
+        <div role="dialog" class="privacy-modal" style="background:#fff;width:420px;margin:200px auto;padding:20px">
+          <h3>We care about your privacy</h3><p>We use cookies to improve your experience.</p>
+          <button id="essential">Essential Only</button> <button id="accept">Accept All</button>
+        </div>
+      </div>`);
+    for (const id of ["essential", "accept"]) document.getElementById(id).onclick = () => document.getElementById("backdrop").remove();
+  }
+</script>
+</body>
+</html>

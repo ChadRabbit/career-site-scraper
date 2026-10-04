@@ -1,0 +1,224 @@
+{
+  "schema_version": 2,
+  "name": "Snowflake",
+  "slug": "snowflake",
+  "start_url": "https://careers.snowflake.com/us/en",
+  "dom": {
+    "card": {
+      "candidates": [
+        "ul.au-target[data-ph-at-id=\"jobs-list\"][role=\"list\"] > li.jobs-list-item.au-target.phw-card-block-nd[data-ph-at-id=\"jobs-list-item\"][role=\"listitem\"]",
+        "li.jobs-list-item.au-target.phw-card-block-nd[data-ph-at-id=\"jobs-list-item\"][role=\"listitem\"]",
+        "div.content-block.au-target.phw-content-block-nd ul.au-target[data-ph-at-id=\"jobs-list\"][role=\"list\"] > li.jobs-list-item.au-target.phw-card-block-nd[data-ph-at-id=\"jobs-list-item\"][role=\"listitem\"]"
+      ],
+      "fingerprint": {
+        "tag": "span",
+        "text": "Software Engineer",
+        "attrs": {
+          "data-ps": "afb79741-span-24",
+          "v-phw-setting": "",
+          "class": "au-target",
+          "au-target-id": "164"
+        },
+        "rect": {
+          "x": 557.1640625,
+          "y": 384.859375,
+          "width": 174.7265625,
+          "height": 33.5
+        }
+      }
+    },
+    "fields": {
+      "title": {
+        "selectors": [
+          "div.job-title.au-target > span.au-target",
+          ":scope > div.au-target:nth-of-type(1) > div.information.au-target > span.au-target[role=\"heading\"] > a.au-target[data-ph-at-id=\"job-link\"][data-ph-at-job-type-text=\"FullTime\"][data-ph-at-job-industry-text=\"Software\"] > div.job-title.au-target > span.au-target"
+        ],
+        "closest": false
+      },
+      "apply_url": {
+        "selectors": [
+          "a.au-target[data-ph-at-id=\"job-link\"][data-ph-at-job-type-text=\"FullTime\"][data-ph-at-job-industry-text=\"Software\"]",
+          "span.au-target[role=\"heading\"] > a.au-target[data-ph-at-id=\"job-link\"][data-ph-at-job-type-text=\"FullTime\"][data-ph-at-job-industry-text=\"Software\"]",
+          ":scope > div.au-target:nth-of-type(1) > div.information.au-target > span.au-target[role=\"heading\"] > a.au-target[data-ph-at-id=\"job-link\"][data-ph-at-job-type-text=\"FullTime\"][data-ph-at-job-industry-text=\"Software\"]"
+        ],
+        "attr": "href",
+        "closest": false
+      },
+      "location": {
+        "selectors": [
+          ":scope > div.au-target:nth-of-type(1) > div.information.au-target > p.job-info.au-target[data-ph-at-id=\"job-info\"] > span.au-target:nth-of-type(3)"
+        ],
+        "closest": false
+      },
+      "department": {
+        "selectors": [
+          ":scope > div.au-target:nth-of-type(1) > div.information.au-target > p.job-info.au-target[data-ph-at-id=\"job-info\"] > span.au-target:nth-of-type(5)"
+        ],
+        "closest": false
+      },
+      "job_id": {
+        "selectors": [
+          "span.au-target[role=\"heading\"] > a.au-target[data-ph-at-id=\"job-link\"][data-ph-at-job-type-text=\"FullTime\"][data-ph-at-job-industry-text=\"Software\"]"
+        ],
+        "attr": "data-ph-at-job-id-text",
+        "closest": false
+      }
+    }
+  },
+  "popups": [
+    {
+      "candidates": [
+        "button.close.au-target[data-ph-at-id=\"cvd-close-link\"]",
+        "div.cvd-close-button-area.au-target button.close.au-target[data-ph-at-id=\"cvd-close-link\"]",
+        "button:text-is(\"Close Covid-19 banner\")",
+        "xpath=/html[1]/body[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[2]/button[1]"
+      ],
+      "fingerprint": {
+        "tag": "button",
+        "text": "Close Covid-19 banner",
+        "attrs": {
+          "class": "close au-target",
+          "phae": "ph-cvd-v1",
+          "phae-type": "click",
+          "phae-main": "2",
+          "click.delegate": "close()",
+          "data-ph-at-id": "cvd-close-link",
+          "style": "opacity: 1;font-size: 20px;text-shadow: none;margin-top: 2px;text-shadow: none;",
+          "data-ps": "a3e087ee-button-1",
+          "v-phw-setting": "",
+          "au-target-id": "79"
+        },
+        "rect": {
+          "x": 1263.59375,
+          "y": 17,
+          "width": 20,
+          "height": 22.28125
+        }
+      }
+    },
+    {
+      "candidates": [
+        "#PhenomChatbotWindowHeaderCloseButton",
+        "button.chatbot-button.chatbot-button-vflat.chatbot-button-icon-only[aria-label=\"Close Chatbot Window\"][type=\"button\"]",
+        "div.chatbot-tooltip__container.chatbot-tooltip--end.show-tooltip button.chatbot-button.chatbot-button-vflat.chatbot-button-icon-only[aria-label=\"Close Chatbot Window\"][type=\"button\"]",
+        "button[aria-label=\"Close Chatbot Window\"]",
+        "xpath=/html[1]/body[1]/div[12]/div[1]/phenom-chatbot[1]/div[1]/aside[1]/div[2]/div[2]/header[1]/div[2]/div[3]/div[1]/button[1]"
+      ],
+      "fingerprint": {
+        "tag": "button",
+        "text": "",
+        "attrs": {
+          "data-v-c58b23d9": "",
+          "data-v-fb4b2a46": "",
+          "id": "PhenomChatbotWindowHeaderCloseButton",
+          "class": "chatbot-button chatbot-button-vflat chatbot-button-icon-only chatbot-button-small",
+          "tabindex": "0",
+          "aria-label": "Close Chatbot Window",
+          "aria-haspopup": "false",
+          "aria-disabled": "false",
+          "type": "button",
+          "style": "text-align: center; justify-content: center; --chatbot-button-shadow: 0px 2px 3px rgba(53, 59, 70, 0.15); --b0657740: false; --b140b82a: #29b5e8; --5eac2a09: #000000; --3dfa1e2c: #2191ba; --11e948b7: "
+        },
+        "rect": {
+          "x": 1304.6015625,
+          "y": 43.2734375,
+          "width": 25.5,
+          "height": 27.59375
+        }
+      }
+    }
+  ],
+  "search": {
+    "query": "Software",
+    "input": {
+      "candidates": [
+        "#typehead",
+        "input.ph-a11y-search-box.form-control.phs-keywords[type=\"text\"][data-ph-at-id=\"globalsearch-input\"][name=\"typehead\"]",
+        "div.au-target input.ph-a11y-search-box.form-control.phs-keywords[type=\"text\"][data-ph-at-id=\"globalsearch-input\"][name=\"typehead\"]",
+        "xpath=/html[1]/body[1]/main[1]/div[3]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/input[1]"
+      ],
+      "fingerprint": {
+        "tag": "input",
+        "text": "",
+        "attrs": {
+          "type": "text",
+          "class": "ph-a11y-search-box form-control phs-keywords input-lg ph-input-search au-target",
+          "value.bind": "searchValue",
+          "phae-bind-literal": "globalsearchPlaceholder, placeholder",
+          "autocomplete": "off",
+          "ph-a11y-autocomplete": "",
+          "ignoreexpanded": "true",
+          "aria-autocomplete": "list",
+          "aria-controls": "typehead-listbox",
+          "data-ph-at-id": "globalsearch-input",
+          "name": "typehead",
+          "id": "typehead",
+          "phae": "ph-global-search-v3",
+          "phae-ally": "aria-controls#,aria-owns#",
+          "data-ps": "b1b271f3-input-1",
+          "v-phw-setting": "",
+          "au-target-id": "122",
+          "placeholder": "Search job title or location",
+          "aria-haspopup": "listbox",
+          "aria-owns": "typehead-listbox",
+          "style": ""
+        },
+        "rect": {
+          "x": 391.5,
+          "y": 280.1171875,
+          "width": 478.5390625,
+          "height": 60
+        }
+      }
+    },
+    "submit": "enter",
+    "results_url": "https://careers.snowflake.com/us/en/search-results?keywords={query}"
+  },
+  "pagination": {
+    "type": "page_number",
+    "control": {
+      "candidates": [
+        "a.au-target[data-ph-at-id=\"pagination-page-number-link\"][role=\"button\"][data-ph-tevent-attr-trait214=\"2\"]",
+        "li.au-target[role=\"presentation\"] a.au-target[data-ph-at-id=\"pagination-page-number-link\"][role=\"button\"][data-ph-tevent-attr-trait214=\"2\"]",
+        "a:text-is(\"2\")",
+        "a[aria-label=\"Page 2\"]",
+        "xpath=/html[1]/body[1]/main[1]/div[3]/div[1]/div[1]/div[1]/div[2]/section[2]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[3]/a[1]"
+      ],
+      "fingerprint": {
+        "tag": "a",
+        "text": "2",
+        "attrs": {
+          "ph-tevent": "pagination_click",
+          "data-ph-at-id": "pagination-page-number-link",
+          "role": "button",
+          "key-role": "btnRole",
+          "data-ps": "afb79741-a-10",
+          "v-phw-setting": "",
+          "class": "au-target",
+          "au-target-id": "643",
+          "aria-current": "false",
+          "href": "https://careers.snowflake.com/us/en/search-results?keywords=Software&from=10&s=1",
+          "data-ph-tevent-attr-trait214": "2",
+          "data-ph-at-text": "2",
+          "aria-label": "Page 2"
+        },
+        "rect": {
+          "x": 601.2890625,
+          "y": 182.859375,
+          "width": 32.125,
+          "height": 28
+        }
+      }
+    },
+    "page_number_template": "a.au-target[role=\"button\"]:text-is(\"{page}\")",
+    "url_template": "https://careers.snowflake.com/us/en/search-results?keywords=Software&from={offset}&s=1",
+    "max_pages": 5
+  },
+  "onboarded_at": "2026-10-04T04:45:06",
+  "onboarded_job_count": 20,
+  "notes": [
+    "search: 'Software' via URL template",
+    "sample job page: https://careers.snowflake.com/us/en/job/SNCOUS5A5EF802A29F443CB01645A538089A79EXTERNALENUSD576A5A4140945FAB710DB8D52041551/$%7Btitle%7D",
+    "pagination 'page_number' verified: 10 new jobs on page 2"
+  ]
+}
